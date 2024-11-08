@@ -22,28 +22,22 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
             
             gallery.appendChild(artDiv);
             document.getElementById('uploadForm').reset();
-            
-            // Add like functionality
+    
             artDiv.querySelector('.like-button').addEventListener('click', function() {
                 const likeCount = artDiv.querySelector('.like-count');
                 likeCount.textContent = parseInt(likeCount.textContent) + 1;
 
-                // Optional visual feedback
-                this.style.color = '#ffcc00'; // Change button color on like
-                this.disabled = true; // Disable button after liking
-                this.innerHTML += ' (Liked!)'; // Update button text
+                this.style.color = '#ffcc00'; 
+                this.disabled = true; 
+                this.innerHTML += ' (Liked!)'; 
             });
         };
         
         reader.readAsDataURL(file);
-        
-        // Optional feedback for users
         alert("Your artwork is being uploaded!");
         
-        // Smooth scroll to gallery after upload
         document.querySelector('#gallery').scrollIntoView({ behavior: 'smooth' });
         
-        // Reset form after a short delay to allow user to see the alert
         setTimeout(() => { document.getElementById('uploadForm').reset(); }, 2000);
         
       }
