@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#font1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+#hero {
+    background-image: url('https://example.com/star-wars-background.jpg'); /* Replace with a suitable background image URL */
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffcc00; 
+}
+
+#hero h2 {
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+#exploreButton {
+    background-color: #ffcc00; 
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#exploreButton:hover {
+    background-color: #e6b800; 
+    transform: scale(1.05);
+}
+
+.art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.art-gallery div {
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.art-gallery img {
+    max-width: 200px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

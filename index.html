@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Fan Art Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Star Wars Fan Art Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#upload">Upload Art</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2 id="font1">Discover, Share, and Celebrate Fan Art!</h2>
+            <p>Join our community of Star Wars fans and showcase your creativity!</p>
+            <button id="exploreButton">Explore Gallery</button>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="art-gallery" id="artGallery"></div>
+        </section>
+
+        <section id="upload">
+            <h2>Upload Your Art</h2>
+            <form id="uploadForm">
+                <input type="text" id="artTitle" placeholder="Art Title" required>
+                <input type="file" id="artFile" accept="image/*" required>
+                <button type="submit">Upload Art</button>
+            </form>
+        </section>
+
+        <section id="community">
+            <h2>Community Engagement</h2>
+            <p>Leave comments and likes on your favorite artworks!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Star Wars Fan Art Showcase | May the Force be with you!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
